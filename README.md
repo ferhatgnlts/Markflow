@@ -2,9 +2,6 @@
 
 A lightning-fast Markdown parser and player with real-time preview. Converts Markdown to clean HTML with support for advanced features like nested lists, tables, emojis and more.
 
-![Demo Screenshot](https://via.placeholder.com/800x400?text=MarkFlow+Demo) 
-*(Replace with actual screenshot)*
-
 ## ✅ Implemented Features
 - [x] **Headings** (H1-H6 with proper nesting)
 - [x] **Text formatting** (bold, italic, strikethrough, inline code)
