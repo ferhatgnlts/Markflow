@@ -1,0 +1,184 @@
+
+/*
+#########################################
+############# Code CSS Codes ############
+#########################################
+*/
+
+.mincode{
+  background-color:#f2f2f2;
+  border: 1px solid #ccc;
+  padding: 2px 6px;
+  font-family: monospace;
+  border-radius: 4px;
+  font-size:0.94em;
+}
+
+pre {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 12px;
+  overflow-x: auto;
+  border-radius: 4px;
+}
+
+pre code {
+  font-family: monospace;
+  font-size: 0.95em;
+  color: #333;
+  line-height:1.5em;
+}
+
+
+
+
+
+
+
+
+/*
+#########################################
+######### Blockquote CSS Codes ##########
+#########################################
+*/
+blockquote {
+  position: relative;
+  padding: 1em;
+  margin: 1em 0;
+  background: #f2f2f2;
+  border-left: 4px solid #ccc;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 3em;
+  font-family: Georgia;
+  position: absolute;
+  left: 10px;
+  top: -2px;
+  color: #ccc;
+  opacity: 0.8;
+}
+
+blockquote::after {
+  content: "\201d";
+  font-size: 3em;
+  font-family: Georgia;
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+  color: #ccc;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+/*
+#########################################
+############ Table CSS Codes ############
+#########################################
+*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+/*
+#########################################
+############## hr CSS Codes #############
+#########################################
+*/
+hr {
+  border: 0;
+  border-top: 1px solid #dddddd;  /* Mavi renkli çizgi */
+  margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+/*
+#########################################
+########## CheckBox CSS Codes ###########
+#########################################
+*/
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  background-color: #f9f9f9;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+input[type="checkbox"]:disabled {
+  cursor: not-allowed;
+}
+
+/* Seçili (Yeşil) */
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: #27ae60; /* Yeşil */
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+input[type="checkbox"]:disabled:checked {
+  background-color: #eaeaea;
+  border: 1px solid #ccc;
+}
+
+/* Seçilmemiş (Kırmızı) */
+input[type="checkbox"]:not(:checked)::after {
+  content: "✕";
+  color: #e74c3c; /* Kırmızı */
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+input[type="checkbox"]:disabled:not(:checked) {
+  background-color: #eaeaea;
+  border: 1px solid #ccc;
+}
