@@ -1,0 +1,103 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markflow</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+    textarea {
+      width: 45%;
+      height: 90vh;
+      padding:10px;
+      font-family: monospace;
+    }
+    #output {
+      width: 45%;
+      height: 90vh;
+      overflow: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <textarea id="markdown" placeholder="# Markdown yaz...">
+# 🚀 Complete Markdown Example
+
+## 📋 Text Formatting
+This is a **bold** text, *italic*, ~~strikethrough~~, and `inline code`.
+
+## 📊 Lists
+### Unordered
+- Item 1
+- Item 2
+  - Nested Item 2.1
+  - Nested Item 2.2
+    - Deep Nested 2.2.1
+
+### Ordered
+1. First
+2. Second
+   1. Nested Second 1
+   2. Nested Second 2
+
+### Task List
+- [x] Complete parser
+- [ ] Add tests
+- [ ] Write documentation
+
+## 🏗️ Code Blocks
+```javascript
+function helloWorld() {
+console.log("Hello Markdown!");
+return 42;
+}
+```
+
+## 📦 Blockquote
+> This is a blockquote.  
+> It can span multiple lines.  
+> > And even be nested!
+
+## 🏆 Tables
+| Syntax      | Description | Tested |
+|-------------|-------------|--------|
+| Header      | Title       | ✅     |
+| Paragraph   | Text        | ❌     |
+| `code`      | Inline      | ⚠️     |
+
+## 🎨 Horizontal Rules
+---
+***
+___
+
+## 🔗 Links & Images
+[GitHub](https://github.com)  
+![Placeholder Image](https://via.placeholder.com/150)
+
+## 😄 Emojis
+Built-in: :smile: :thumbsup: :heart:  
+Custom: :coffee: :warning: :computer:
+
+## 🛠️ Advanced
+### Escaped Chars
+\\*Not italic\\*, \\`not code\\`
+
+### Mixed Formatting
+**Bold *italic* combo** inside a [link](https://example.com) with `code`.
+</textarea>
+  <div id="output"></div>
+
+  <script type="module" src="emojis.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
