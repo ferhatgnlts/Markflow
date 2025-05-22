@@ -196,5 +196,5 @@ input[type="checkbox"]:disabled:not(:checked) {
 #########################################
 */
 img{
-  max-width:100vw;
+  max-width:100%;
 }
