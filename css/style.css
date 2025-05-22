@@ -182,3 +182,19 @@ input[type="checkbox"]:disabled:not(:checked) {
   background-color: #eaeaea;
   border: 1px solid #ccc;
 }
+
+
+
+
+
+
+
+
+/*
+#########################################
+############ Image CSS Codes ############
+#########################################
+*/
+img{
+  max-width:100%;
+}
